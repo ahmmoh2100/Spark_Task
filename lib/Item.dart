@@ -56,9 +56,6 @@ class _ItemState extends State<Item> {
                       setState(() {
                         icon = Icon(Icons.add_shopping_cart);
                         cartLIst.remove(this.name+"|"+price.toString());
-                        if(Navigator.canPop(context))
-                          Navigator.pushReplacement(
-                            context, MaterialPageRoute(builder: (context) => Cart()));
                       });
                       inCart=false;
                     }
